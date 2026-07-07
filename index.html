@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Li Shengqiang | Personal Homepage</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <header>
-    <nav>
-      <h2>Li Shengqiang</h2>
-      <div>
+  <title>Li Shengqiang | Biomedical Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">Li Shengqiang</div>
+
+      <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -19,54 +23,196 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Li Shengqiang</h1>
-    <p>Undergraduate Student in Biomedical Engineering</p>
-    <p>Interested in biomedical signal processing, medical AI, and biosensor systems.</p>
-    <a href="cv.pdf" class="button">Download CV</a>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="tagline">Biomedical Engineering Undergraduate</p>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an undergraduate student majoring in Biomedical Engineering.
-      My interests include biomedical electronics, surface EMG signal processing,
-      medical artificial intelligence, and biosensor systems.
-    </p>
-  </section>
+        <h1>Li Shengqiang</h1>
 
-  <section id="projects">
-    <h2>Projects</h2>
+        <p class="hero-subtitle">
+          Interested in biomedical signal processing, medical artificial intelligence,
+          biosensors, and wearable biomedical systems.
+        </p>
 
-    <div class="card">
-      <h3>Masseter sEMG Signal Processing and Classification</h3>
-      <p>
-        Designed a two-channel sEMG acquisition and analysis workflow for different
-        jaw movement patterns, including rest, light bite, heavy bite, and chewing tasks.
-      </p>
-      <p><strong>Tools:</strong> MATLAB, Python, signal processing, feature extraction</p>
-    </div>
+        <div class="hero-buttons">
+          <a href="cv.pdf" class="btn primary-btn">Download CV</a>
+          <a href="#projects" class="btn secondary-btn">View Projects</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Dysphagia Monitoring System Design</h3>
-      <p>
-        Designed a wearable monitoring concept based on surface EMG and pressure sensing
-        for swallowing function assessment.
-      </p>
-      <p><strong>Tools:</strong> sEMG, biomedical sensors, system design</p>
-    </div>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-title">
+        <span>About</span>
+        <h2>About Me</h2>
+      </div>
 
-  </section>
+      <div class="about-card">
+        <p>
+          I am an undergraduate student majoring in Biomedical Engineering. My academic
+          background combines biomedical electronics, signal processing, medical imaging,
+          programming, and medical artificial intelligence.
+        </p>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Python, MATLAB, C, STM32, biomedical signal processing, medical imaging, biosensors</p>
-  </section>
+        <p>
+          My current interests focus on biomedical signal acquisition and analysis,
+          especially surface EMG signal processing, wearable sensing systems, and
+          AI-assisted biomedical applications.
+        </p>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: kk22f678@example.com</p>
-  </section>
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="section-title">
+        <span>Education</span>
+        <h2>Education</h2>
+      </div>
 
+      <div class="timeline-card">
+        <div class="timeline-dot"></div>
+
+        <div>
+          <h3>Undergraduate Student in Biomedical Engineering</h3>
+          <p class="muted">School of Biomedical Engineering</p>
+
+          <p>
+            Relevant coursework includes Circuit Analysis, Biomedical Electronics,
+            Signals and Systems, Medical Artificial Intelligence, Medical Imaging,
+            and Programming.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-title">
+        <span>Projects</span>
+        <h2>Selected Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-icon">01</div>
+          <h3>Masseter sEMG Signal Processing and Classification</h3>
+          <p>
+            Built a two-channel surface EMG acquisition and analysis workflow for
+            different jaw movement patterns, including rest, light bite, heavy bite,
+            chewing, and bruxism-like tasks.
+          </p>
+          <div class="tech-tags">
+            <span>MATLAB</span>
+            <span>Python</span>
+            <span>sEMG</span>
+            <span>Feature Extraction</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">02</div>
+          <h3>Dysphagia Monitoring System Design</h3>
+          <p>
+            Designed a wearable monitoring concept based on surface EMG and pressure
+            sensing for swallowing function assessment and dysphagia-related risk
+            screening.
+          </p>
+          <div class="tech-tags">
+            <span>Wearable Sensors</span>
+            <span>sEMG</span>
+            <span>System Design</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">03</div>
+          <h3>OCT Image Processing and Tissue Analysis</h3>
+          <p>
+            Processed OCT images of normal and abnormal tissue samples, comparing
+            scattering intensity, structural boundaries, and internal texture features.
+          </p>
+          <div class="tech-tags">
+            <span>OCT</span>
+            <span>ImageJ</span>
+            <span>Medical Imaging</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">04</div>
+          <h3>Sports Injury Analysis Platform</h3>
+          <p>
+            Participated in the design of a biomedical engineering project for motion
+            assessment and injury analysis, combining sensor data, functional requirements,
+            and system-level design.
+          </p>
+          <div class="tech-tags">
+            <span>Biomedical Design</span>
+            <span>Data Analysis</span>
+            <span>Presentation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-title">
+        <span>Skills</span>
+        <h2>Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>Python, MATLAB, C, HTML, CSS</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Signal Processing</h3>
+          <p>Filtering, FFT, envelope extraction, RMS, MDF, MPF, feature engineering</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Biomedical Systems</h3>
+          <p>sEMG acquisition, biosensors, STM32, ADC, wearable sensing systems</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>VS Code, GitHub Pages, Excel, ImageJ, Origin</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="section-title">
+        <span>Contact</span>
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-card">
+        <p>
+          I am open to academic communication, research opportunities, and project
+          collaboration in biomedical engineering, medical AI, and biomedical signal
+          processing.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:kk22f678@gmail.com">kk22f678@gmail.com</a>
+          <a href="cv.pdf">CV</a>
+          <a href="https://github.com/kk22f678-cmyk" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Li Shengqiang. All rights reserved.</p>
+  </footer>
 </body>
 </html>
